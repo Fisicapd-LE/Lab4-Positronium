@@ -1,15 +1,8 @@
 \select@language {italian}
 \select@language {italian}
 \contentsline {section}{\numberline {1}Esecuzione esperimento}{1}{section.1}
-\contentsline {section}{\numberline {2}Analisi Dati}{2}{section.2}
+\contentsline {section}{\numberline {2}Analisi dati}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Analisi preliminare dei segnali}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Calibrazione in Energia}{2}{subsection.2.2}
-\contentsline {section}{\numberline {3}Calibrazione in Tempo}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Studio della risoluzione temporale al variare dell'energia}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Velocit\IeC {\`a} della luce}{12}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Analisi dei dati digitali}{14}{subsection.3.3}
-\contentsline {section}{\numberline {4}Conclusioni}{20}{section.4}
-\contentsline {section}{\numberline {5}Appendici}{20}{section.5}
-\contentsline {subsection}{\numberline {5.1}Calibrazione in energia}{20}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Calibrazione in tempo}{23}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Misura del tempo di ritardo dei cavetti}{27}{subsection.5.3}
+\contentsline {subsection}{\numberline {2.2}Calibrazione in energia dei rivelatori}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Calibrazione in tempo del TAC}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Decadimento a due o tre fotoni}{8}{subsection.2.4}

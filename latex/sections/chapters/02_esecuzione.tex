@@ -1,0 +1,49 @@
+\section{Esecuzione esperimento}
+L'apparato strumentale consiste in quattro rivelatori a scintillazione NaI(Tl), di cui uno montato verticalmente sopra il supporto per la sorgente di $^{22}Na$, e tre
+montati orizzontalmente su un goniometro a bracci che ne permette lo spostamento. Inoltre si ha accesso ad una serie di moduli elettronici (un amplificatore ad alto voltaggio,
+un fan in-out, un CFTD, uno shaping amplifier, una concidence unit, un TAC, una delay unit e un modulo scaler rate). Per quanto riguarda l'acquisizione, si ha accesso
+ad un oscilloscopio e ad un ADC.\\
+
+Il primo giorno ci si è focalizzati sullo studio dei segnali dei rivelatori e sulla calibrazione dell'apparato. Come prima cosa, si è visualizzato il segnale di goni
+rivelatore, separatamente, sull'oscilloscopio, e si è caratterizzato tale segnale misurandone le caratteristiche.
+Dopo aver preso nota di tali segnali si è collegato all'amplificatore il rivelatore, e si sono guardati i segnali ad oscilloscopio, riconoscendo quali di questi fossero 
+associati a segnali del tipo fotone da 511 keV e quali invece
+fotone da 1275 keV. Per fare questo si è semplicemente utilizzato il rate indicato dall'oscilloscopio stesso in fase di visualizzazione del segnale. Infatti, alzando il
+trigger dell'oscilloscopio, si vedono solo i segnali più energetici, e quindi si vede il rate diminuire, questo ha permesso di vedere effettivamente quale fosse l'ampiezza
+caratteristica dei segnali associati ai diversi fotoni emessi dalla sorgente. Tale operazione è stata ripetuta per tutti e 4 i rivelatori per verificare che non ci fossero
+problemi di alcuna natura nella rivelazione dei fotoni emessi dal sodio. Dopo aver visualizzato i segnali in uscita dall'amplificatore si è voluto comprendere il funzionamento
+del CFTD: per farlo si è utilizzata un'uscita del fan in-out come input e si è visualizzata sull'oscilloscopio l'uscita prompt e, triggherando su di essa, l'uscita delayed,
+dopodiché si è visto il funzionamento dei vari micro-switch andando a modificarli e guardando il segnale all'oscilloscopio. Successivamente is è settata la soglia di tutti
+e quattro i rivelatori: per i tre rivelatori complanari (quindi i rivelatori 1, 2 e 3) si è impostata la soglia in modo da non vedere il rumore elettronico, mentre per
+il quarto rivelatore la soglia è stata impostata in modo da non vedere nemmeno il fotone da 511 keV. Per fare questo si è collegato all'oscilloscopio l'uscita
+amplificata del rivelatore, e si è trggherato il segnale sul segnale prompt del CFTD con input sempre un'uscita del riovelatore stesso. Andando a modificare un trimmer
+sul CFTD stesso si è potuto vedere come alzando la soglia scomparissero dal rivelatore via via i segnaliu meno energetici. Continuando ad agire su tale trimmer è stato
+possibile rimuovere il rumore elettronico per i tre rivelatori complanari e il fotone da 511 keV per il quarto (si era precedenemente riconosciuta l'ampiezza del segnale
+legato alla rivelazione di tale fotone). Una volta compreso il funzionamento dei vari moduli e impostata la soglia del CFTD in modo che potesse visualizzare il segnale
+a cui si è interessati, si è passati alla vera e propria calibrazione dei rivelatori. Per farlo si è attaccato il rivelatore in questione all'amplificatore e quest'ultimo
+al sistema di acquisizione digitale, e si è dato a tale sistema il trigger utilizzando l'uscita delayed del CFTD a cui è stato attaccato lo stesso rivelatore (per poter
+calibrare è stata abbassata la soglia di tutti i rivelatori precedentemente impostata, poi è stata ripristinata per le misure successive alla calibrazione). Fatto questo si
+sono cambiati i parametri dell'amplificatore in modo che i due fotopicchi fossero visualizzati il primo circa al canale 500 e il secondo circa al canale 1300. Dopo aver
+calibrato, è risultato più semplice agire sul trimmer per la regolazione della soglia del quarto rivelatore (infatti è stato sufficiente alzare la soglia fino alla scomparsa
+del primo fotopicco).
+Sistemate tutte le soglie come richiesto si è passati alla vera e propria presa dati che sono stati successivamente analizzati, e per preparare l'apparato si sono
+regolate le width in modo da essere circa di 100 ~ns e si sono messi i delay in modo che ci fosse sovrapposizione tra i segnali dei rivelatori 1 e 2 e ci fosse un
+ritardo di circa 20 ~ns tra il segnale del rivelatore 1 e quello del rivelaore 2. Successivamente si è verificata la coincidenza tra i segnali del rivelatore 1 e del
+rivelatore 3, e si è agito sui microswitch di quest'ultimo per fare in modo che questa fosse buona.\\
+
+Durante la seconda sessione di laboratorio si sono presi i dati, sfruttando l'apparato sistemato e studiato durante la sessione precedente. Come prima cosa si è
+cerificato che i rivelatori fossero nella configurazione 1, cioè con i rivelatori 1 e 2 collineari e il rivelatore 3 che forma un angolo di $\pi/3$ con il
+rivelatore 2. Fatto questo, si è collegata la prima uscita della coincidence unit (cioè quella che genera un segnale quando arrivano in coincidenza i segnali
+dal primo e dal secondo rivelatore al Master Gate del segnale di acquisizione. Poi, verificato che tutti i rivelatori fossero collegati all'ADC, si
+è preso un file di prova andando a vedere se effettivamente si sono visti solamente i picchi a 511 ~keV. Successicamente a questo si è calibrato il TAC, andando ad aggiungere
+i ritardi tramite l'apposita cassetta; poi si è passati alla vera e propria acquisizione dati. Come prima cosa si è posto il sistema nella configurazione a 180 gradi,
+cioè con due rivelatori collineari e il terzo che forma un angolo di 60 gradi con il secondo, e si è collegato il modulo scaler/rate per avere una visione il tempo
+reale del rate di acquisizione dei rivelatori. Per questa prima misura si è utilizzato come master trigger la coincidenza nel rivelatore 1 e nel rivelatore due, in modo
+che venissero registrati esclusivamente gli eventi in cui il positronio è decaduto lungo la linea formata dai rivelatori, e che poi si potessero selezionare via software
+i dati in cui il primo fotone da 1275 keV è entrato nel quarto rivelatore. Infine si è preparato il sistema per la misura del decadimento del positronio in tre fotoni (cioè
+con i tre rivelatori complanari distanziati da angoli di 120 gradi) e si è messo il master gate di acquisizione sulla coincidenza tra i tre rivelatori complanari. Tale
+misura è stata fatta per tutta la durata tra la seconda e la terza sessione (cioè per circa 20 ore).\\
+
+Durante la terza sessione di laboratorio si sono prese le misure fisiche dei rivelatori (in particolare si è guardato il datasheet e si è misurata la distanza tra
+i rivelatori e la sorgente e le dimensioni fisiche dei rivelatori stessi, dopodiché si è presa un'ulteriore misura nel caso dei due rivelatori collineari e si è iniziata
+l'analisi dati. 

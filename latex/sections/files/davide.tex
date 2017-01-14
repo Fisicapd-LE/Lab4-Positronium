@@ -1,0 +1,92 @@
+\subsection{Analisi preliminare dei segnali}
+
+Come prima cosa si è voluto caratterizzare il segnale in uscita direttamente dai rivelatori, oppure dal fan in-out. Per fare ciò si sono semplicemente collegati
+all'oscilloscopio i rivelatori e si è preso nota delle caratteristiche del segnale stesso. I valori misurati sono riassunti nella Tabella \ref{tab:preliminare}.
+Tutti i sengali sono risultati
+di polarità negativa e si è misurata l'ampiezza di un segnale tipico, se ne è misurato il tempo di salita e il tempo di discesa (visti come i tempi impiegati dal segnale
+per raggiungere dal 10\% al 90\% dell'ampiezza massima e viceversa) e si è misurato il rumore utilizzando una latenza di 5 s per il segnale. Alle prime misure si è
+associato un errore calcolato come errore dati i parametri costruttivi dell'socilloscopio, mentre al rumore non si è voluto associare un errore in quanto si è interessati
+solo all'entità di tale grandezza.
+%
+\begin{table}[h]
+	\centering
+	\input{tables/segnali_preliminari.tex}
+	\caption{Misura preliminare dei sengnali in uscita dai rivelatori}
+	\label{tab:preliminare}
+\end{table}
+%
+Collegando tra il rivelatore il fan in-out non si è vista alcuna differenza sostanziale nei segnali visti.
+A scopo di semplice confronto dei rivelatori, si è voluto anche andare a leggere le ampiezze medie dei segnali in uscita dai rivelatori. Si è rivelato come, effettivamente, 
+le ampiezze medie fossero tra loro molto vicine per i rivelatori 1, 2 e 4, mentre particolarmente basse per il rivelatore 3. Questo effetto è probabilmente conseguenza
+di effetti strumentali da imputare all'apparato stesso. Non si riportano i valori in quanto è stato fatto solamente un confronto qualitativo.\\
+
+Andando a spostare il trigger dell'oscilloscopio è stato possibile andare ad indentificare le ampiezze caratteristiche dei segnali associati ai due diversi fotoni emessi dalla
+sorgente di sodio. Alzando il trigger si è notato un primo abbassamento repentino nella rate appena si è superata la soglia del rumore elettronico, poi si è visto
+un secondo abbassamento repentino superando il fotopicco da 511 keV e un terzo abbassamento molto rapido superato il fotopicco a 1275 keV, dopo il quale il rate si attestava
+a qualche decina di Hertz, legati a fotoni di natura ambientale o cosmica.\\
+
+\subsection{Calibrazione in energia dei rivelatori}
+
+Successivamente si è passati alla vera e propria calibrazione dei quattro rivelatori che sono stati utilizzati, per effettuare la quale si è semplicemente fatta la regressione
+lineare dei centroidi dei fotopicchi rivelati tramite il programma di acquisizione. Nella Tabella \ref{tab:calibrazione} si possono vedere i valori dei parametri interpolanti
+ottenuti, mentre si rimanda alle appendici per vedere le singole interpolazioni.\\
+%
+\begin{table}[h]
+	\centering
+	\input{tables/calibrazione.tex}
+	\caption{Parametri dell'interpolazione dei singoli picchi degli spettri.}
+	\label{tab:calibrazione}
+\end{table}
+%
+
+Partendo da questi dati è stato possibile andare a stimare i parametri di calibrazione $m$ e $q$ (dato che si conoscono solo due punti per i quali questa retta passa,
+non si è fatta una vera e propria interpolazione ma si sono calcolati i coefficienti delle rette passanti per tali punti, non si associa quindi alcun errore a queste
+grandezze, che comunque successivamente non verranno usate). I risultati si possono vedere nella Tabella \ref{tab:calib_parametri}.\\
+%
+\begin{table}[h]
+	\centering
+	\input{tables/calib_parametri.tex}
+	\caption{Parametri di calibrazione dei rivelatori.}
+	\label{tab:calib_parametri}
+\end{table}
+%
+
+A scopo di presentare il lavoro fatto, nella Figura \ref{gr:quattrospettri} si possono vedere gli spettri calibrati di tutti e quattro i
+rivelatori.\\
+\input{./graphs/quattrospettri}
+%Inserire gli spettri calibrati: 4 pad in un'unica canvas
+
+Poi si è preso un primo file di prove con le coincidenze, e si è visto che effettivamente si sono visti solamente i picchi a 511~keV. Questi spettri si possono
+vedere nella Figura \ref{gr:prova_coinc}. Effettivamente da questi spettri si vede che a meno di effetti ambientali si sono raccolti solamente i dati sul
+primo fotopicco e la spalla Compton associata a tale picco.\\
+\input{./graphs/prova_coinc}
+%Inserire logli spettroi con due pad diversi che presentano il file di prova
+
+\subsection{Calibrazione in tempo del TAC}
+
+Successivamente si è passati alla calibrazione temporale del sistema di acquisizione, andando ad utilizzare la cassetta dei ritardi per vedere lo spostamento del
+segnale in uscita dal TAC al variare dei ritardi inseriti. Sono stati fatti dei fit gaussiani del segnale in uscita dal TAC e tutti i grafici trovati si possono
+vedere nella Figura \ref{gr:tempo_colori}. Inoltre nella Tabella \ref{tab:calibtempo} si possono vedere i parametri interpolanti tali segnali
+al variare del ritardo introdotto.\\
+\input{./graphs/tempo_colori}
+%inserire gaussiante temporali colorate
+\begin{table}[h]
+	\centering
+	\input{tables/calibtempo.tex}
+	\caption{Calibrazione in tempo del sistema di acquisizione.}
+	\label{tab:calibtempo}
+\end{table}
+
+Una volta noti i parametri delle gaussiane, con una regressione lineare, che si può vedere nel Grafico \ref{gr:calib_time_retta}, si può andare a calibrare il sistema di
+acquisizione, andando a trovare i coefficienti di tale retta. I risultati sono:
+$$ m= 2.1256 \pm 0.0004 \hspace{3cm} q = 311.22 0.03$$\\
+\input{./graphs/calib_time_retta}
+%Inserire regressione lineare della calibrazione temporale dell'apparato strumentale
+
+\FloatBarrier
+\subsection{Decadimento a due o tre fotoni}
+
+Una volta calibrato tutto il sistema di acquisizione, si è arrivati al vero e proprio studio del positronio: in particolare si vuole misurare il rapporto tra il decadimento
+a due e a tre fotoni del positronio e la distribuzione temporale degli eventi.\\
+
+Per studiare la probabilità di decadimento è stato sufficiente prendere i dati analizzati e considerare il dead time dei rivelatori: 
