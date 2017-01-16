@@ -1,0 +1,1 @@
+Spettri con il vincolo sul TAC maggiore di zero e sull'energia dei singoli spettri. 

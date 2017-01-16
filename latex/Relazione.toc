@@ -5,4 +5,5 @@
 \contentsline {subsection}{\numberline {2.1}Analisi preliminare dei segnali}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Calibrazione in energia dei rivelatori}{3}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Calibrazione in tempo del TAC}{4}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Decadimento a due o tre fotoni}{8}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.4}Decadimento a due fotoni}{8}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Decadimento a tre fotoni}{9}{subsection.2.5}
