@@ -9,5 +9,5 @@
 \contentsline {subsection}{\numberline {2.5}Decadimento a tre fotoni}{9}{subsection.2.5}
 \contentsline {section}{\numberline {3}Simulazioni del decadimento}{13}{section.3}
 \contentsline {subsection}{\numberline {3.1}Stima teorica dell'accettanza del rivelatore}{13}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Decadimento a due corpi, rivelatori a \(180^\circ \)}{13}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Decadimento a tre corpi, rivelatori a \(120^\circ \)}{13}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.1}Decadimento a due corpi, rivelatori a \relax $180^\circ \relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{13}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Decadimento a tre corpi, rivelatori a \relax $120^\circ \relax \GenericError { }{LaTeX Error: Bad math environment delimiter}{See the LaTeX manual or LaTeX Companion for explanation.}{Your command was ignored.\MessageBreak Type I <command> <return> to replace it with another command,\MessageBreak or <return> to continue without it.}}{13}{subsubsection.3.1.2}
