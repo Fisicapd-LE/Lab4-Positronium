@@ -6,13 +6,13 @@
   circonferenze, sono equivalentemente rappresentati da cerchi sulla superficie sferica e viceversa. Partiamo quindi dal caso più semplice. La stima fatta vuole
 discutere l'angolo solido in senso lato coperto dai rivelatori rispetto all'evento analizzato, e non si prefigge di studiare la possibilità che il fotone non
 interagisca con il rivelatore.
-  \subsubsection{Decadimento a due corpi, rivelatori a \(180^\circ\)}
+  \subsubsection{Decadimento a due corpi, rivelatori a 180 gradi}
   Avendo a che fare con un decadimento a due corpi con momento iniziale nullo i due fotoni emessi avranno momento uguale ed opposto e di conseguenza, posizionando due rivelatori
   a \(180^\circ\), se un fotone colpisce un rivelatore automaticamente l'altro interagirà con il secondo rivelatore facendo si che l'evento venga effettivamente rivelato. La
   probabilità che un generico decadimento a 2 fotoni venga rivelato corrisponde alla probabilità che un fotone interagisca con  uno dei due rivelatori, pari al rapporto tra la 
   somma tra le aree dei due rivelatori e la superficie della sfera di raggio R, essendo per isotropia la probabilità di emissione uguale per tutte le direzioni. Quindi
   \(P\left(2\gamma\right) = \frac{r^2}{2R^2}\).
-  \subsubsection{Decadimento a tre corpi, rivelatori a \(120^\circ\)}
+  \subsubsection{Decadimento a tre corpi, rivelatori a 120 gradi}
   Il caso del decadimeto a tre fotoni è molto più delicato, essendo un decadimento a tre corpi lo spettro dell'energia è continuo e dipende dall'angolo di emissione. Ciò che però
   si può dire è che i tre fotoni vengono emessi complanari, per effetto sempre della conservazione del momento lineare. In questo caso i tre scintillatori vengono posti a \(120^\circ\)
   l'uno dall'altro sullo stesso piano. Introduciamo a questo punto una nuova ipotesi al fine di semplificare il cacolo, ovvero che anche i tre fotoni vengano emessi ad un angolo di
@@ -20,7 +20,9 @@ interagisca con il rivelatore.
   
   Al fine di calcolare la probabilità che un evento venga rivelto conviene fissare un sistema di riferimento con origine nel centro della sfera di raggio R
   e con asse \(z\) che passa per il centro del rivelatore interagente con il primo fotone. Gli altri due assi si scelgono in maniera tale che i centri degli altri due rivelatori
-  giacciano sul piano \(xz\). [mettere immagine]\\
+  giacciano sul piano \(xz\).\\
+  
+  \input{./img/sfera_sdr}
 
   Il passo successivo consiste nel parametrizzare le traiettorie dei singoli fotoni. \'E necessario parametrizzarne soltanto due, poichè il terzo interagisce automaticamente con il
   sistema di acquisizione una volta che i primi due lo hanno fatto. E' molto comodo utilizzare le coordinate sferico polari, in maniera tale che la traiettoria del primo fotone sia 
@@ -41,8 +43,11 @@ interagisca con il rivelatore.
   quindi in definitiva: \(t= \cos \beta \approx -\frac{1}{2} \left( 1 + \mu \theta \sqrt{3} \right) \).
   A questo punto si cerchi la condizione per cui il secondo fotone interagisca con uno dei due rivelatori rimanenti, supponiamo questo sia quello con centro nel terzo quadrante
   del piano \(xz\). La proiezione di quest'ultimo sul piano \(yz\) è un'ellisse di centro \(\left(0,0,-R \sin 30^\circ \right)\), asse maggiore parallelo all'asse \(y\) di lunghezza \(r\) e asse minore invece parallelo
-  all'asse \(z\) di lunghezza \(r \cos 30^\circ\). L'equazione di questa ellisse è sul piano \(yz\):
+  all'asse \(z\) di lunghezza \(r \cos 30^\circ\). L'equazione di questa ellisse sul piano \(yz\) è:
   $$ \frac{y^2}{r^2} + \frac{\left( z + R \sin 30^\circ \right)^2}{\left(r \cos 30^\circ\right)^2} = 1 = \frac{1}{r^2}\left(y^2 + \frac{4}{3} \left( z + \frac{R}{2} \right)^2 \right) $$
+  
+  \input{./img/ellisse_ivan}
+  
   Si noti che se le coordinate \(x\) e \(y\) appartenenti al vettore \(R n_2 = \left( x, y, z \right)\) che parametrizza l'intersezione tra la traiettoria del secondo fotone e la 
   superficie sferica di raggio \(R\) sono interne all'ellisse, allora il fotone ha interagito con il rivelatore. Prima di procedere calcoliamo il \(\sin \beta \) in funzione di $\theta$ in base a
   ciò che sappiamo di \(\cos \beta\). Infatti: 
