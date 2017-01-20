@@ -26,8 +26,8 @@ interagisca con il rivelatore.
   sistema di acquisizione una volta che i primi due lo hanno fatto. E' molto comodo utilizzare le coordinate sferico polari, in maniera tale che la traiettoria del primo fotone sia 
   nella direzione del versore \(n_1 = \left( \cos \phi \sin \theta , \sin \phi \sin \theta, \cos \theta  \right)\) con \(\theta\) angolo azimutale, e similmente per il secondo fotone
   \(n_2 = \left( \cos \alpha \sin \beta , \sin \alpha \sin \beta, \cos \beta  \right)\) con questa volta \(\beta\) come angolo azimutale. Poichè per ipotesi il primo fotone
-  interagisce con il rivelatore posto al polo \(\left(0,0,R \right)\), l'angolo \(\theta\) è vincolato ad essere minore a \(\\arctan\left(\ \frac{r}{R} \right) \approx \frac{r}{R} << 1 \)
-  e di conseguenza \(\\sin \theta \approx \theta \) e \(\\cos \theta \approx 1 \). Si userà questo risultato a breve. A questo punto bisogna imporre che l'angolo tra i due versori sopra 
+  interagisce con il rivelatore posto al polo \(\left(0,0,R \right)\), l'angolo \(\theta\) è vincolato ad essere minore di \(\arctan\left(\ \frac{r}{R} \right) \approx \frac{r}{R} << 1 \)
+  e di conseguenza \(\sin \theta \approx \theta \) e \(\cos \theta \approx 1 \). Si userà questo risultato a breve. A questo punto bisogna imporre che l'angolo tra i due versori sopra 
   definiti sia di \(120^\circ\), ovvero \(n_1 \cdot n_2 = \cos (120^\circ) = -\frac{1}{2}\). Questa condizione si traduce nell'espressione \[\sin \theta \sin \beta \left( \cos \phi \cos \alpha
   + \sin \phi \sin \alpha \right) + \cos \theta \cos \beta = \mu \sin \theta \sin \beta  + \cos \theta \cos \beta =-\frac{1}{2}\] con \(\mu := \left( \cos \phi \cos \alpha + 
   \sin \phi \sin \alpha \right) = \cos \left( \alpha - \phi \right) \). Al fine di risolvere tale equazione si ricorre alla sopracitata approsimazione, ottenendo quindi 
@@ -65,10 +65,10 @@ interagisca con il rivelatore.
   minore in modulo di \(\arctan\left( \frac{r}{R} \right)\) e può essere quindi considerato piccolo. Di conseguenza \(\mu = \cos \phi \cos \alpha + \sin \phi \sin \alpha = \cos \phi + \alpha \sin \phi \)
   e \(\sin^2 \alpha \approx \alpha^2\). La condizione qui sopra può quindi essere riscritta:
   $$ \alpha^2 \le  \frac{4r^2}{3R^2} \left(1 + \frac{2\theta}{\sqrt{3}} \left( \cos \phi + \alpha \sin \phi \right)  \right)  \to $$
-  $$ \alpha^2 -\frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \alpha -\frac{4r^2}{3R^2}\left( 1 +\frac{2 \theta}{\sqrt{3}} \\cos \phi \right) \le 0 $$
+  $$ \alpha^2 -\frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \alpha -\frac{4r^2}{3R^2}\left( 1 +\frac{2 \theta}{\sqrt{3}} \cos \phi \right) \le 0 $$
   risolviamo l'equazone di secondo grado associata alla disequazione appena ricavata.
-  $$ \alpha{_1,2} = \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \pm \sqrt{ \left( \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \right)^2 + \frac{16r^2}{3R^2}\left( 1 +\frac{2 \theta}{\sqrt{3}} \\cos \phi \right)} \approx $$
-  $$ \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \pm \frac{4r}{\sqrt{3}R}\sqrt{ 1 +\frac{2 \theta}{\sqrt{3}} \\cos \phi} \approx \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \pm \frac{4r}{\sqrt{3}R}\left( 1 +\frac{\theta}{\sqrt{3}} \\cos \phi \right) =: A \pm B$$
+  $$ \alpha{_1,2} = \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \pm \sqrt{ \left( \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \right)^2 + \frac{16r^2}{3R^2}\left( 1 +\frac{2 \theta}{\sqrt{3}} \cos \phi \right)} \approx $$
+  $$ \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \pm \frac{4r}{\sqrt{3}R}\sqrt{ 1 +\frac{2 \theta}{\sqrt{3}} \cos \phi} \approx \frac{8r^2\theta}{3\sqrt{3}R^2}\sin \phi \pm \frac{4r}{\sqrt{3}R}\left( 1 +\frac{\theta}{\sqrt{3}} \cos \phi \right) =: A \pm B$$
   Di conseguenza la precedente disequazione è soddisfatta per \(A-B\le \alpha \le A + B\).\\
   L'ultimo passo per determinare la probabilità che il secondo fotone interagisca con uno dei due rivelatori consiste nel notare che tale probabilità è equivalente a quella
   che lo stesso fotone interagisca con un solo rivelatore ed imponendo \(0 \le \alpha \le \pi\), ovvero che interagisca con il rivelatore per cui abbiamo fatto tutti i precedenti
@@ -77,7 +77,7 @@ interagisca con il rivelatore.
   tramite i fattori \(4 \pi\) e \(\pi\):
   $$ \rho = \frac{1}{4\pi}\frac{1}{\pi}\int_{0}^{2\pi} \dd\phi \int_{0}^{\arctan\left(\frac{r}{R}\right)\approx \frac{r}{R}} \dd\theta \sin \theta \int_{A-B}^{A+B} \dd\alpha = 
   \frac{1}{4 \pi^2}\int_{0}^{2\pi} \dd\phi \int_{0}^{\frac{r}{R}} \dd\theta \sin \theta 2B =$$
-  $$ \frac{2r}{\sqrt{3}R \pi^2}\int_{0}^{2\pi} \dd\phi \int_{0}^{\frac{r}{R}} \dd\theta \sin \theta \left( 1 +\frac{\theta}{\sqrt{3}} \\cos \phi \right) =
+  $$ \frac{2r}{\sqrt{3}R \pi^2}\int_{0}^{2\pi} \dd\phi \int_{0}^{\frac{r}{R}} \dd\theta \sin \theta \left( 1 +\frac{\theta}{\sqrt{3}} \cos \phi \right) =
   \frac{2r}{\sqrt{3} R \pi^3}\int_{0}^{2\pi} \dd\phi \left[ - \cos \theta \right]_{0}^{\frac{r}{R}} = $$ 
   $$- \frac{2r}{\sqrt{3} R \pi^2}\int_{0}^{2\pi} \dd\phi \left( \cos \left( \frac{r}{R} \right) -1 \right) \approx
   \frac{2r}{\sqrt{3} R \pi^2}\int_{0}^{2\pi} \dd\phi \left(\frac{r^2}{2R^2} \right) = \frac{2 r^3}{\sqrt{3} \pi R^3} $$

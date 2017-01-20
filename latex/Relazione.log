@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.4)  20 JAN 2017 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.11.4)  20 JAN 2017 16:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3128,7 +3128,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/euler/eurm5.pfb></usr/share/texlive
 mf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/share/texmf/fonts/
 type1/public/tex-gyre/qplb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qp
 lr.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qplri.pfb>
-Output written on Relazione.pdf (18 pages, 418885 bytes).
+Output written on Relazione.pdf (18 pages, 418344 bytes).
 PDF statistics:
  242 PDF objects out of 1000 (max. 8388607)
  206 compressed objects within 3 object streams

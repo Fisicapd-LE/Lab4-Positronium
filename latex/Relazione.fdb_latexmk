@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1484923987 "Relazione.tex" "Relazione.pdf" "Relazione" 1484924006
+["pdflatex"] 1484925802 "Relazione.tex" "Relazione.pdf" "Relazione" 1484925821
   "../img/nofloat/../../graphs/120_spettri_pulitien.tex" 1484746787 87244 d0eac428835a53b68b076f4358e5a191 ""
   "../img/nofloat/../../graphs/120_spettri_pulitir4.tex" 1484746787 86056 09c5b2b9bc6734b71fa9def5b2ffe33a ""
   "../img/nofloat/../../graphs/120_spettri_pulitisom.tex" 1484746787 138133 eea803fef61e5dd9e1af3d29ad96792e ""
@@ -329,10 +329,10 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1458942643 31351 b32c45dce4a01cb7b53ed90c546614ca ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1478291154 1863403 f3ff9a4253bcb5fb9a9baaf0c572cb01 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1478283197 3855172 cc76d1372fcd94d7dc93bfdbedd3d1b8 ""
-  "Relazione.aux" 1484924006 7667 6cdc90108435b26d87bf40efb8b422dd ""
-  "Relazione.out" 1484924006 852 9522564611c1db378d6703c1e449ce11 ""
+  "Relazione.aux" 1484925821 7667 6cdc90108435b26d87bf40efb8b422dd ""
+  "Relazione.out" 1484925821 852 9522564611c1db378d6703c1e449ce11 ""
   "Relazione.tex" 1480610742 1610 bc8f0e3f972b8f6a53a75aa82f5c9d07 ""
-  "Relazione.toc" 1484924006 1118 eb6a30af18beac156254a04821d78791 ""
+  "Relazione.toc" 1484925821 1118 eb6a30af18beac156254a04821d78791 ""
   "graphs/120_spettri_pulitien.tex" 1484746787 243 5e33783c63b619029c1f2a8011b5ea77 ""
   "graphs/120_spettri_pulitir4.tex" 1484923942 229 c08a06b50b9359e32330d67d79d71ed7 ""
   "graphs/120_spettri_pulitisom.tex" 1484746787 249 ebdec09044035ee0b643432369055313 ""
@@ -359,7 +359,7 @@
   "sections/chapters/PLACEHOLDER.txt" 1478641935 0 d41d8cd98f00b204e9800998ecf8427e ""
   "sections/code.tex" 1472042620 0 d41d8cd98f00b204e9800998ecf8427e ""
   "sections/files/davide.tex" 1484746787 13808 b430202b9c0f8037d6cb1bf97a79febd ""
-  "sections/files/stima_teorica.tex" 1484923942 12476 60081fd26c97498d6087d24f09ea1a1c ""
+  "sections/files/stima_teorica.tex" 1484925798 12470 578991c2bdf14b3fd524ae41cd36e304 ""
   "sections/relation_title.tex" 1484746787 1013 d46a4cb426bea1e7ed12d0d7e2d68fde ""
   "tables/calib_parametri.tex" 1484746787 267 82631788f5c42fb79ff8f8e5068b2c61 ""
   "tables/calibrazione.tex" 1484746787 1156 8922daed44f95f3b0c7097abf2ed9572 ""
@@ -367,7 +367,7 @@
   "tables/segnali_preliminari.tex" 1484746787 477 b3f62d99dae0e8271aeb6f5cbc56ee19 ""
   (generated)
   "Relazione.toc"
-  "Relazione.log"
-  "Relazione.out"
-  "Relazione.pdf"
   "Relazione.aux"
+  "Relazione.out"
+  "Relazione.log"
+  "Relazione.pdf"
