@@ -14,4 +14,4 @@
 \contentsline {subsection}{\numberline {4.1}Angolo solido sotteso da un singolo rivelatore}{14}{subsection.4.1}
 \contentsline {subsection}{\numberline {4.2}Decadimento a due corpi, rivelatori a 180 gradi}{14}{subsection.4.2}
 \contentsline {subsection}{\numberline {4.3}Decadimento a tre corpi, rivelatori a 120 gradi}{14}{subsection.4.3}
-\contentsline {section}{\numberline {A}Interpolazioni gaussiane}{18}{appendix.Alph1}
+\contentsline {section}{\numberline {A}Interpolazioni gaussiane}{19}{appendix.Alph1}
