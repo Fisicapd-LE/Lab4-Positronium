@@ -4,12 +4,14 @@
 \contentsline {section}{\numberline {2}Analisi dati}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Analisi preliminare dei segnali}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Calibrazione in energia dei rivelatori}{3}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Calibrazione in tempo del TAC}{4}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.3}Calibrazione in tempo del TAC}{5}{subsection.2.3}
 \contentsline {subsection}{\numberline {2.4}Decadimento a due fotoni}{8}{subsection.2.4}
 \contentsline {subsection}{\numberline {2.5}Decadimento a tre fotoni}{9}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Confronto tra le rate}{10}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Il tempo di decadimento dell'ortopositronio}{14}{subsection.2.7}
-\contentsline {section}{\numberline {3}Simulazioni del decadimento}{14}{section.3}
-\contentsline {subsection}{\numberline {3.1}Stima teorica dell'accettanza del rivelatore}{14}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}Decadimento a due corpi, rivelatori a 180 gradi}{14}{subsubsection.3.1.1}
-\contentsline {subsubsection}{\numberline {3.1.2}Decadimento a tre corpi, rivelatori a 120 gradi}{14}{subsubsection.3.1.2}
+\contentsline {subsection}{\numberline {2.6}Confronto tra le rate}{13}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.7}Il tempo di decadimento dell'ortopositronio}{13}{subsection.2.7}
+\contentsline {section}{\numberline {3}Simulazioni del decadimento}{13}{section.3}
+\contentsline {section}{\numberline {4}Stima teorica dell'accettanza del rivelatore}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}Angolo solido sotteso da un singolo rivelatore}{14}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Decadimento a due corpi, rivelatori a 180 gradi}{14}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Decadimento a tre corpi, rivelatori a 120 gradi}{14}{subsection.4.3}
+\contentsline {section}{\numberline {A}Interpolazioni gaussiane}{18}{appendix.Alph1}

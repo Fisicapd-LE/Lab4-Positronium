@@ -2,32 +2,31 @@
 
 Come prima cosa si è voluto caratterizzare il segnale in uscita direttamente dai rivelatori, oppure dal fan in-out. Per fare ciò si sono semplicemente collegati
 all'oscilloscopio i rivelatori e si è preso nota delle caratteristiche del segnale stesso. I valori misurati sono riassunti nella Tabella \ref{tab:preliminare}.
-Tutti i sengali sono risultati
+Tutti i segnali sono risultati
 di polarità negativa e si è misurata l'ampiezza di un segnale tipico, se ne è misurato il tempo di salita e il tempo di discesa (visti come i tempi impiegati dal segnale
 per raggiungere dal 10\% al 90\% dell'ampiezza massima e viceversa) e si è misurato il rumore utilizzando una latenza di 5 s per il segnale. Alle prime misure si è
-associato un errore calcolato come errore dati i parametri costruttivi dell'socilloscopio, mentre al rumore non si è voluto associare un errore in quanto si è interessati
+associato un errore calcolato come errore dati i parametri costruttivi dell'oscilloscopio, mentre al rumore non si è voluto associare un errore in quanto si è interessati
 solo all'entità di tale grandezza.
 %
 \begin{table}[h]
 	\centering
 	\input{tables/segnali_preliminari.tex}
-	\caption{Misura preliminare dei sengnali in uscita dai rivelatori}
+	\caption{Misura preliminare dei segnali in uscita dai rivelatori}
 	\label{tab:preliminare}
 \end{table}
 %
 Collegando tra il rivelatore il fan in-out non si è vista alcuna differenza sostanziale nei segnali visti.
 A scopo di semplice confronto dei rivelatori, si è voluto anche andare a leggere le ampiezze medie dei segnali in uscita dai rivelatori. Si è rivelato come, effettivamente, 
-le ampiezze medie fossero tra loro molto vicine per i rivelatori 1, 2 e 4, mentre particolarmente basse per il rivelatore 3. Questo effetto è probabilmente conseguenza
-di effetti strumentali da imputare all'apparato stesso. Non si riportano i valori in quanto è stato fatto solamente un confronto qualitativo.\\
+le ampiezze medie fossero tra loro molto vicine. Non si riportano i valori in quanto è stato fatto solamente un confronto qualitativo.\\
 
 Andando a spostare il trigger dell'oscilloscopio è stato possibile andare ad indentificare le ampiezze caratteristiche dei segnali associati ai due diversi fotoni emessi dalla
 sorgente di sodio. Alzando il trigger si è notato un primo abbassamento repentino nella rate appena si è superata la soglia del rumore elettronico, poi si è visto
-un secondo abbassamento repentino superando il fotopicco da 511 keV e un terzo abbassamento molto rapido superato il fotopicco a 1275 keV, dopo il quale il rate si attestava
+un secondo abbassamento repentino superando il fotopicco da 511~keV e un terzo abbassamento molto rapido superato il fotopicco a 1275 keV, dopo il quale il rate si attestava
 a qualche decina di Hertz, legati a fotoni di natura ambientale o cosmica.\\
 
 \subsection{Calibrazione in energia dei rivelatori}
 
-Successivamente si è passati alla vera e propria calibrazione dei quattro rivelatori che sono stati utilizzati, per effettuare la quale si è semplicemente fatta la regressione
+Successivamente si è passati alla vera e propria calibrazione dei quattro rivelatori che sono stati utilizzati, per effettuare la quale si è semplicemente fatta la fit
 lineare dei centroidi dei fotopicchi rivelati tramite il programma di acquisizione. Nella Tabella \ref{tab:calibrazione} si possono vedere i valori dei parametri interpolanti
 ottenuti, mentre si rimanda alle appendici per vedere le singole interpolazioni.\\
 %
@@ -40,8 +39,7 @@ ottenuti, mentre si rimanda alle appendici per vedere le singole interpolazioni.
 %
 
 Partendo da questi dati è stato possibile andare a stimare i parametri di calibrazione $m$ e $q$ (dato che si conoscono solo due punti per i quali questa retta passa,
-non si è fatta una vera e propria interpolazione ma si sono calcolati i coefficienti delle rette passanti per tali punti, non si associa quindi alcun errore a queste
-grandezze, che comunque successivamente non verranno usate). I risultati si possono vedere nella Tabella \ref{tab:calib_parametri}.\\
+non si è fatta una vera e propria interpolazione ma si sono calcolati i coefficienti delle rette passanti per tali punti, non computando alcun errore in quanto non necessario per la calibrazione dei grafici). I risultati si possono vedere nella Tabella \ref{tab:calib_parametri}.\\
 %
 \begin{table}[h]
 	\centering
@@ -57,10 +55,11 @@ rivelatori.\\
 %Inserire gli spettri calibrati: 4 pad in un'unica canvas
 
 Poi si è preso un primo file di prove con le coincidenze, e si è visto che effettivamente si sono visti solamente i picchi a 511~keV. Questi spettri si possono
-vedere nella Figura \ref{gr:prova_coinc}. Effettivamente da questi spettri si vede che a meno di effetti ambientali si sono raccolti solamente i dati sul
+vedere nella Figura \ref{gr:prova_coinc}. Nel prendere il file di prova non si era ancora regolata opportunamente la soglia. Effettivamente da questi spettri si vede che a meno di effetti ambientali si sono raccolti solamente i dati sul
 primo fotopicco e la spalla Compton associata a tale picco.\\
 \input{./graphs/prova_coinc}
 %Inserire logli spettroi con due pad diversi che presentano il file di prova
+\FloatBarrier
 
 \subsection{Calibrazione in tempo del TAC}
 
@@ -79,7 +78,7 @@ al variare del ritardo introdotto.\\
 
 Una volta noti i parametri delle gaussiane, con una regressione lineare, che si può vedere nel Grafico \ref{gr:calib_time_retta}, si può andare a calibrare il sistema di
 acquisizione, andando a trovare i coefficienti di tale retta. I risultati sono:
-$$ m= 2.1256 \pm 0.0004 \hspace{3cm} q = 311.22 0.03$$\\
+$$ m= 2.1256 \pm 0.0004 1/ns \hspace{3cm} q = 311.22 \pm 0.03$$\\
 \input{./graphs/calib_time_retta}
 %Inserire regressione lineare della calibrazione temporale dell'apparato strumentale
 
@@ -96,7 +95,7 @@ un segnale (si ricorda che la soglia di R4 è stata regolata in modo da vedere s
 si sono visti si possono vedere nella Figura \ref{gr:180_misura1_spettricalibrati}.\\
 \input{./graphs/180_misura1_spettricalibrati}
 
-Da questa figura è possibile vedere come, effettivamente, negli spettri dei primi due rivelatori si abbiano solo i valori legati al primo fotopicco e all'effetto Compton ad
+Da questa Figura è possibile vedere come, effettivamente, negli spettri dei primi due rivelatori si abbiano solo i valori legati al primo fotopicco e all'effetto Compton ad
 esso associato, mentre lo spettro del terzo rivelatore somiglia ad uno degli spettri inizialmente presentati. Per presentare questi spettri è stato rimosso il bin zero
 dallo spettro del TAC, che è associato ad una coincidenza tra il primo ed il secondo rivelatore, ma quando il quarto rivelatore non ha visto il fotone da 1275~keV. A partire
 da questi spettri si possono ricavare varie informazioni, come per esempio il rate di decadimento in due fotoni. Dato che tale spettro è stato regolato in modo che
@@ -109,33 +108,31 @@ effettivi, perciò è plausibile un simile rate.\\
 Inoltre con questo campione di dati si può fare un'ulteriore analisi: si possono contare quanti degli eventi registrati sono successivi all'ingresso del fotone energetico
 nel quarto rivelatore. Per contare questi fotoni è necessario andare a integrare il picco del TAC: infatti si è ottenuto un segnale diverso da zero in uscita dal TAC solo
 se è partito lo \textit{start}, cioè solo se è entrato un fotone nel rivelatore quattro. Si ha che il TAC ha rivelato circa $2.685 \times 10^5$ eventi differenti, il che vuol
-dire che, rispetto al totale, solo nell'1.86\% dei casi l'emissione del fotone più energetico è avvenuta in maniera da esser rivelata da R4. Andando a correggere anche questo
-valore per il dead time, considerando che R4 aveva un rate di acquisizione visualizzato di circa 6.3 kHz, si ha che si sono acquisiti circa il 65\% dei segnali del rivelatore,
-quindi si considera che circa nel 2.87\% dei casi il fotone è entrato nel rivelatore 4. Tutti questi risultati sono presentati senza errore in quanto l'errore poissoniano
+dire che, rispetto al totale, solo nell'1.86\% dei casi l'emissione del fotone più energetico è avvenuta in maniera da esser rivelata da R4. Tutti questi risultati sono presentati senza errore in quanto l'errore poissoniano
 associato alle misure è molto basso (si ha un grande numero di dati a disposizione), ma sul dead time risulta difficile andare a stimare il reale errore.\\
 
 \FloatBarrier
 \subsection{Decadimento a tre fotoni}
-Per il decadimento a tre fotoni, la configurazione dell'apparato strumentale è analoga a quella utilizzata per il decadimento in due fotoni, con l'unica differenza
-che si sono spostati i tre rivelatori complanari in modo che formassero angoli di 120 gradi l'uno dall'altro, e il master trigger è stato impostato sulla coincidenza
+Per il decadimento a tre fotoni, la conFigurazione dell'apparato strumentale è analoga a quella utilizzata per il decadimento in due fotoni, con l'unica differenza
+che si sono spostati i tre rivelatori complanari in modo che formassero angoli di 120 gradi l'uno  con l'altro e il master trigger è stato impostato sulla coincidenza
 tra tutti e tre i rivelatori al posto che sulla coincidenza solo tra il primo e il secondo. Il TAC è stato mantenuto analogamente (cioè come start si è usato un segnale
-nel quarto rivelatore e come stop la coincidenza tra i tre rivelatori complanari). Lo spettro visualizzato si può vedere nella figura \ref{gr:120_spettricalibrati}.\\
+nel quarto rivelatore e come stop la coincidenza tra i tre rivelatori complanari). Lo spettro visualizzato si può vedere nella Figura \ref{gr:120_spettricalibrati}.\\
 \input{./graphs/120_spettricalibrati}
 
 Questi spettri però, non vanno bene, e questo si vede dal fatto che, a differenza da quelli a due fotoni, si continuano a distinguere tutti i picchi. Questo fenomeno
-è conseguenza del fatto che nella versione con tre coincidenze si vedono anche dei casi "spuri", come per esempio l'ingresso del fotone da 1275 keV in uno dei tre rivelatori,
+è conseguenza del fatto che nella versione con tre coincidenze hanno rilevanza statistica anche dei casi "spuri", come per esempio l'ingresso del fotone da 1275 keV in uno dei tre rivelatori,
 di un fotone legato a un decadimento a due corpi in un secondo rivelatore e di un fotone ambientale nel terzo. Per pulire questi fenomeni si può, per esempio, andare a
 richiedere che il fotone più energetico sia effettivamente stato rivelato da R4 (che si vede imponendo che il segnale del TAC riveli un valore maggiore di zero). Facendolo,
-si trovano i quattro spettri che si possono vedere nella figura \ref{gr:120_spettri_pulitir4}.\\
+si trovano i quattro spettri che si possono vedere nella Figura \ref{gr:120_spettri_pulitir4}.\\
 \input{./graphs/120_spettri_pulitir4}
 
 Effettivamente da questi spettri è riconoscibile il fotopicco legato al decadimento in tre fotoni, ma il campione di dati risulta decisamente scarno, nonostante si abbia
 preso dati per 1220 minuti. Inoltre sono ancora ben riconoscibili i fotopicchi legati al fotone da 1275 keV e al fotone da 511 keV, il che vuol dire che è necessaria 
 un'ulteriore scrematura per poter vedere i decadimenti a tre fotoni a cui si è realmente interessati. Per farlo ci sono diversi modi possibili. Un primo tentativo consisteva
-nel taglio in bse al vaolre in uscita dal TAC, ma è risultato troppo difficile trovare effettivamente un intervallo che permettesse di vedere solamente il picco a cui
+nel taglio in base al valore in uscita dal TAC, ma è risultato troppo difficile trovare effettivamente un intervallo che permettesse di vedere solamente il picco a cui
 si è interessati, e si è perciò trascurato. Una seconda prova è stata fatta andando a imporre che sul rivelatore 4 fosse stato visto il fotone da 1275 keV, e che sui tre
 rivelatori complanari l'energia fosse per ognuno inferiore al valore dopo il quale ci si aspetta di vedere i primi effetti degli altri due fotopicchi. I risultati
-di questa scrematura si possono vedere nella figura \ref{gr:120_spettri_pulitien}, dove effettivamente si nota come i tagli sulle energie siano al punto giusto e lo
+di questa scrematura si possono vedere nella Figura \ref{gr:120_spettri_pulitien}, dove effettivamente si nota come i tagli sulle energie siano al punto giusto e lo
 spettro del TAC sia perfettamente in linea con ciò che si aspetta (gaussiana convoluta con decadimento esponenziale).\\
 \input{./graphs/120_spettri_pulitien}
 
@@ -144,28 +141,29 @@ mette un vincolo a sulla somma totale affinché sia tra i 950 e i 1100 keV. In q
 Figura \ref{gr:120_spettri_pulitisom}.\\
 \input{./graphs/120_spettri_pulitisom}
 
-In questo grafico si vede che effettivamente si sono puliti abbastanza bene i dati, nonsotante se ne siano persi una buona quantità, inoltre è quello fisicamente più
+In questo grafico si vede che effettivamente si sono puliti abbastanza bene i dati, nonostante se ne siano persi una buona quantità, inoltre è quello fisicamente più
 sensato tra i filtri inseriti. Questo vuol dire che si è ottenuto un rate di decadimento in tre fotoni decisamente molto basso (e quindi sul quale c'è un errore poissoniano
-decisamente molto alto), cioè di circa $1.2 \times 10^{-2}$~Hz, decisamente molto molto basso. Questo perché si è comunque chiesto che il quarto rivelatore rivelasse un
-segnale valido per il TAC. Dato che il calcolo per i tdue fotoni è stato fatto senza richiedere questo, si può cercare di pulire diversamente i dati: si mantengono i filtri
-sulla somma delle energie rivelate, si aggiungono dei filtri affinché l'energia nei singoli rivelatori non sia nulla e non superi i 450 keV e si rimuove il filtro sul
-segnale valido del TAC. In questo modo si ottengono gli spettri che si possono vedere nella Figura \ref{gr:120_spettri_pulitisom_nor4}.\\
+decisamente molto alto), cioè di circa $1.2 \times 10^{-2}$~Hz. Questo perché si è comunque chiesto che il quarto rivelatore rivelasse un
+segnale valido per il TAC. Si è provato a mantenre i filtri
+sulla somma delle energie rivelate e si sono aggiunti dei filtri affinché l'energia nei singoli rivelatori non sia nulla e non superi i 450 keVrimuovnedo il filtro sul
+segnale valido del TAC. Questa selezione ha senso in quanto il filtro sul TAC era necessario ad escludere gli eventi in cui il fotone da 1275~keV era stato rilevato in uno dei rivelatori sul piano, ma i restanti filtri ci assicurano che questi eventi sono in ogni caso scartati. In questo modo si ottengono gli spettri che si possono vedere nella Figura \ref{gr:120_spettri_pulitisom_nor4}.\\
 \input{./graphs/120_spettri_pulitisom_nor4}
 
 Questi spettri si considerano in assoluto i più attendibili, e rivelano come ci sia una rate di circa 0.29 Hz. Non è necessario correggere questo valore per dead time perché
 si vede dagli spettri nella Figura \ref{gr:120_spettricalibrati} che il rate è sufficientemente basso.
+\FloatBarrier
 
 \subsection{Confronto tra le rate}
 Come si vedrà nella sezione successiva, per poter confrontare le rate di decadimento del positronio è necessario effettuare delle correzioni di natura geometrica. Per poterlo
-fare, è necessario conoscere le granddezze fisiche caratteriswtiche dell'esperimento. Si sono misurati:
+fare, è necessario conoscere le grandezze fisiche caratteristiche dell'esperimento. Si sono misurati (e saranno definiti in seguito):
 $$R = 17.9 \text{cm} \hspace{3cm} r =5.08 \text{cm}$$
 Per quanto riguarda il parapositronio, si sono visti eventi con una frequenza di 5.5~kHz, ma gli eventi visti sono circa il 4.03\% dei totali. Questo vuol dire che 
-ci sono stati eventi con un rate di circa 136.5 kHz. Per quanto riguarda l'ortopositronio, invece, si sono visti circa il 2.52\% degli eventi a 120 gradi,
+ci sono stati eventi con un rate di circa 136.5 kHz. Per l'ortopositronio, invece, si sono visti circa il 2.52\% degli eventi a 120 gradi,
 perciò considerando che si è visto un rate
 di 0.29 Hz, il rate effettivo è di circa 11,5 Hz. Considerando ora che nel decadimento dell'ortopositronio solamente circa il 3.5\% degli eventi decade con un
 angolo che l'apparato strumentale vede\footnote{Si considera la distribuzione di probabilità trovata al link:
-$www.int.washington.edu/talks/WorkShops/int_02_3/People/Vetter_P/pstalk.pdf$
-si trova che integrando numericamente tale funzione facendo variare l'angolo tra le traiettorie di 10 gradi attorno al valore 120 usato per la stima teorica},
+\ref{bib:pos_formula} (confrontata con il grafico trovato nell'articolo \ref{bib:pos_graph}).
+Si trova che integrando numericamente tale funzione facendo variare l'angolo tra le traiettorie di 10 gradi attorno al valore 120 usato per la stima teorica},
 si ha che si è creato l'ortopositronio con un rate di circa 328.8 Hz. Questo vuol dire che il rapporto tra i due rate è di circa 1/415, abbastanza in linea con le previsioni
 teoriche\footnote{Nel considerare questo rapporto si sono fatte molte approssimazioni: il calcolo teorico è frutto di uno sviluppo al primo ordine, la correzione per il
 dead time non è molto precisa e la pulizia degli eventi non è perfettamente univoca. Oltretutto gli intervalli di integrazione sono stati presi in modo da essere fisicamente
@@ -175,8 +173,8 @@ attorno a quei valori.}
 \FloatBarrier
 \subsection{Il tempo di decadimento dell'ortopositronio}
 Dato l'esperimento, si è voluto anche andare a stimare il tempo di vita medio delle specie prodotte. Per quanto riguarda il parapositronio, però, questo non è
-possibile in quanto il tempo di vita è troppo baddo, ed effettivamente si vede nello spettro del TAC della figura \ref{gr:180_misura1_spettricalibrati} come si
-abbia una gaussiana semplice, mentre dalla Figura \ref{gr:120_spettri_pulitisom_nor4} si vede che c'è un decadimento esponenziale più marcato. Perciò si studi questo
+possibile in quanto il tempo di vita è troppo basso, ed effettivamente si vede nello spettro del TAC della Figura \ref{gr:180_misura1_spettricalibrati} come si
+abbia una gaussiana semplice, mentre dalla Figura \ref{gr:120_spettri_pulitien} si vede che c'è un decadimento esponenziale più marcato. Perciò si studi questo
 grafico.\\
 
 Si è provato a studiare i dati con molti filtri, ma in nessun caso si è arrivati a vedere un'esponenziale sufficientemente "buono" per essere interpolato. Questo

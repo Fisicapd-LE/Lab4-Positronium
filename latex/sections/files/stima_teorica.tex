@@ -1,4 +1,4 @@
-\subsection{Stima teorica dell'accettanza del rivelatore}
+\section{Stima teorica dell'accettanza del rivelatore}
   In questa sezione, come suggerito dal titolo, si procederà con il calcolo della stima teorica dell'accettanza del sistema di acquisizione nelle due configurazioni usate 
   nell'esperienza. Tali stime verranno effettuate usando fondamentalmente 2 ipotesi, più una aggiuntiva per il caso del decadimento a 3 fotoni. Le 2 ipotesi comuni consistono 
   nell'assumere che il decadimento avvenga al centro di una sfera di raggio \(R\) sulla cui superficie sono situati i rivelatori di raggio \(r\) e nel considerare il rapporto 
@@ -6,17 +6,24 @@
   circonferenze, sono equivalentemente rappresentati da cerchi sulla superficie sferica e viceversa. Partiamo quindi dal caso più semplice. La stima fatta vuole
 discutere l'angolo solido in senso lato coperto dai rivelatori rispetto all'evento analizzato, e non si prefigge di studiare la possibilità che il fotone non
 interagisca con il rivelatore.
-  \subsubsection{Decadimento a due corpi, rivelatori a 180 gradi}
+
+  \subsection{Angolo solido sotteso da un singolo rivelatore}
+  Si calcola come prima cosa l'angolo sotteso da un singolo rivelatore di raggio r a distanza R dalla sorgente, in rapporto  con l'angolo solido totale. Considerando le coordinate sferiche tale rapporto è dato da
+  
+  $$\frac{1}{4\pi}\,\int _{0}^{2\,\pi }\!\int _{0}^{\arctan \left( {\frac {r}{R}}\right) }\!\sin \left( \theta \right) {d\theta}\,{d\phi}=\frac{1}{2}\, \left(1 - {\frac {1}{\sqrt {{\frac {{R}^{2}+{r}^{2}}{{R}^{2}}}}}}\right)$$
+ 
+  
+  \subsection{Decadimento a due corpi, rivelatori a 180 gradi}
   Avendo a che fare con un decadimento a due corpi con momento iniziale nullo i due fotoni emessi avranno momento uguale ed opposto e di conseguenza, posizionando due rivelatori
-  a \(180^\circ\), se un fotone colpisce un rivelatore automaticamente l'altro interagirà con il secondo rivelatore facendo si che l'evento venga effettivamente rivelato. La
+  a \(180^\circ\), se un fotone colpisce un rivelatore automaticamente l'altro interagirà con il secondo rivelatore facendo sì che l'evento venga effettivamente rivelato. La
   probabilità che un generico decadimento a 2 fotoni venga rivelato corrisponde alla probabilità che un fotone interagisca con  uno dei due rivelatori, pari al rapporto tra la 
   somma tra le aree dei due rivelatori e la superficie della sfera di raggio R, essendo per isotropia la probabilità di emissione uguale per tutte le direzioni. Quindi
   \(P\left(2\gamma\right) = \frac{r^2}{2R^2}\).
-  \subsubsection{Decadimento a tre corpi, rivelatori a 120 gradi}
+  \subsection{Decadimento a tre corpi, rivelatori a 120 gradi}
   Il caso del decadimeto a tre fotoni è molto più delicato, essendo un decadimento a tre corpi lo spettro dell'energia è continuo e dipende dall'angolo di emissione. Ciò che però
   si può dire è che i tre fotoni vengono emessi complanari, per effetto sempre della conservazione del momento lineare. In questo caso i tre scintillatori vengono posti a \(120^\circ\)
   l'uno dall'altro sullo stesso piano. Introduciamo a questo punto una nuova ipotesi al fine di semplificare il cacolo, ovvero che anche i tre fotoni vengano emessi ad un angolo di
-  \(120^\circ\) l'uno dall'altro, cosicchè se due fotoni interagiscono con due rivelatori anche il terzo interagirà con l'ultimo rivelatore. 
+  \(120^\circ\) l'uno dall'altro\footnote{per ottenere la probabilità finale integreremo la distribuzione degli angoli attorno a questo valore}, cosicché se due fotoni interagiscono con due rivelatori anche il terzo interagirà con l'ultimo rivelatore. 
   
   Al fine di calcolare la probabilità che un evento venga rivelto conviene fissare un sistema di riferimento con origine nel centro della sfera di raggio R
   e con asse \(z\) che passa per il centro del rivelatore interagente con il primo fotone. Gli altri due assi si scelgono in maniera tale che i centri degli altri due rivelatori
@@ -33,7 +40,7 @@ interagisca con il rivelatore.
   definiti sia di \(120^\circ\), ovvero \(n_1 \cdot n_2 = \cos (120^\circ) = -\frac{1}{2}\). Questa condizione si traduce nell'espressione \[\sin \theta \sin \beta \left( \cos \phi \cos \alpha
   + \sin \phi \sin \alpha \right) + \cos \theta \cos \beta = \mu \sin \theta \sin \beta  + \cos \theta \cos \beta =-\frac{1}{2}\] con \(\mu := \left( \cos \phi \cos \alpha + 
   \sin \phi \sin \alpha \right) = \cos \left( \alpha - \phi \right) \). Al fine di risolvere tale equazione si ricorre alla sopracitata approsimazione, ottenendo quindi 
-  \( \mu \theta \sin \beta + \cos \beta = -\frac{1}{2}\), risolvibile utilizzando l'identita fondamentale della trigonmetria \(\sin \beta = \pm \sqrt{1 - \cos^2 \beta}\), per cui
+  \( \mu \theta \sin \beta + \cos \beta = -\frac{1}{2}\), risolvibile utilizzando l'identità fondamentale della trigonometria \(\sin \beta = \pm \sqrt{1 - \cos^2 \beta}\), per cui
   \(\mu^2 \theta^2 \left( \sqrt{ 1 - \cos^2 \beta } \right)^2 = \left( -\frac{1}{2} - \cos \beta \right)^2  \) ed usando la variabile ausiliaria \(t = \cos \beta\) ci si riconduce 
   a risolvere l'equazione \(t^2 \left( 1 + \mu^2 \theta^2 \right) + t + \frac{1}{4} - \mu^2 \theta^2=0\) che ha come soluzioni :
   $$ t_{1,2} = \frac{-1 \pm \mu \theta \sqrt{3} \sqrt{1 + \frac{4}{3} \mu^2 \theta^2 }}{2\left( 1 + \mu^2 \theta^2 \right)} \approx$$
