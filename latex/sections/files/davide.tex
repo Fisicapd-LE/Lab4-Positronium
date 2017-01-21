@@ -92,8 +92,8 @@ a due e a tre fotoni del positronio e la distribuzione temporale degli eventi.\\
 Si inizi dal decadimento a due fotoni: la misura è stata fatta andando a registrare gli spettri dei tre rivelatori complanari assieme allo spettro del TAC. Il
 trigger è stato impostato sulla coincidenza tra R1 ed R2, ed a tale valore è stato impostato anche lo stop del TAC, mentre lo start del TAC è stato dato da R4 che visualizza
 un segnale (si ricorda che la soglia di R4 è stata regolata in modo da vedere solo segnali di energia uguale o superiore al fotopicco da 1275~keV). Gli spettri calibrati che
-si sono visti si possono vedere nella Figura \ref{gr:180_misura1_spettricalibrati}.\\
-\input{./graphs/180_misura1_spettricalibrati}
+si sono visti si possono vedere nella Figura \ref{gr:180_misura1_spettricalibrati_2}.\\
+\input{./graphs/180_misura1_spettricalibrati_2}
 
 Da questa Figura è possibile vedere come, effettivamente, negli spettri dei primi due rivelatori si abbiano solo i valori legati al primo fotopicco e all'effetto Compton ad
 esso associato, mentre lo spettro del terzo rivelatore somiglia ad uno degli spettri inizialmente presentati. Per presentare questi spettri è stato rimosso il bin zero
@@ -116,15 +116,15 @@ associato alle misure è molto basso (si ha un grande numero di dati a disposizi
 Per il decadimento a tre fotoni, la conFigurazione dell'apparato strumentale è analoga a quella utilizzata per il decadimento in due fotoni, con l'unica differenza
 che si sono spostati i tre rivelatori complanari in modo che formassero angoli di 120 gradi l'uno  con l'altro e il master trigger è stato impostato sulla coincidenza
 tra tutti e tre i rivelatori al posto che sulla coincidenza solo tra il primo e il secondo. Il TAC è stato mantenuto analogamente (cioè come start si è usato un segnale
-nel quarto rivelatore e come stop la coincidenza tra i tre rivelatori complanari). Lo spettro visualizzato si può vedere nella Figura \ref{gr:120_spettricalibrati}.\\
-\input{./graphs/120_spettricalibrati}
+nel quarto rivelatore e come stop la coincidenza tra i tre rivelatori complanari). Lo spettro visualizzato si può vedere nella Figura \ref{gr:120_spettricalibrati_2}.\\
+\input{./graphs/120_spettricalibrati_2}
 
 Questi spettri però, non vanno bene, e questo si vede dal fatto che, a differenza da quelli a due fotoni, si continuano a distinguere tutti i picchi. Questo fenomeno
 è conseguenza del fatto che nella versione con tre coincidenze hanno rilevanza statistica anche dei casi "spuri", come per esempio l'ingresso del fotone da 1275 keV in uno dei tre rivelatori,
 di un fotone legato a un decadimento a due corpi in un secondo rivelatore e di un fotone ambientale nel terzo. Per pulire questi fenomeni si può, per esempio, andare a
 richiedere che il fotone più energetico sia effettivamente stato rivelato da R4 (che si vede imponendo che il segnale del TAC riveli un valore maggiore di zero). Facendolo,
-si trovano i quattro spettri che si possono vedere nella Figura \ref{gr:120_spettri_pulitir4}.\\
-\input{./graphs/120_spettri_pulitir4}
+si trovano i quattro spettri che si possono vedere nella Figura \ref{gr:120_spettri_pulitir4_2}.\\
+\input{./graphs/120_spettri_pulitir4_2}
 
 Effettivamente da questi spettri è riconoscibile il fotopicco legato al decadimento in tre fotoni, ma il campione di dati risulta decisamente scarno, nonostante si abbia
 preso dati per 1220 minuti. Inoltre sono ancora ben riconoscibili i fotopicchi legati al fotone da 1275 keV e al fotone da 511 keV, il che vuol dire che è necessaria 
@@ -132,25 +132,25 @@ un'ulteriore scrematura per poter vedere i decadimenti a tre fotoni a cui si è 
 nel taglio in base al valore in uscita dal TAC, ma è risultato troppo difficile trovare effettivamente un intervallo che permettesse di vedere solamente il picco a cui
 si è interessati, e si è perciò trascurato. Una seconda prova è stata fatta andando a imporre che sul rivelatore 4 fosse stato visto il fotone da 1275 keV, e che sui tre
 rivelatori complanari l'energia fosse per ognuno inferiore al valore dopo il quale ci si aspetta di vedere i primi effetti degli altri due fotopicchi. I risultati
-di questa scrematura si possono vedere nella Figura \ref{gr:120_spettri_pulitien}, dove effettivamente si nota come i tagli sulle energie siano al punto giusto e lo
+di questa scrematura si possono vedere nella Figura \ref{gr:120_spettri_pulitien_2}, dove effettivamente si nota come i tagli sulle energie siano al punto giusto e lo
 spettro del TAC sia perfettamente in linea con ciò che si aspetta (gaussiana convoluta con decadimento esponenziale).\\
-\input{./graphs/120_spettri_pulitien}
+\input{./graphs/120_spettri_pulitien_2}
 
 Una diversa scrematura può essere fatta richiedendo che la somma delle energie sui vari rivelatori sia inferiore all'energia data dall'annichilazione del positronio, cioè si
 mette un vincolo a sulla somma totale affinché sia tra i 950 e i 1100 keV. In questa maniera si arriva agli spettri che si possono vedere nella 
-Figura \ref{gr:120_spettri_pulitisom}.\\
-\input{./graphs/120_spettri_pulitisom}
+Figura \ref{gr:120_spettri_pulitisom_2}.\\
+\input{./graphs/120_spettri_pulitisom_2}
 
 In questo grafico si vede che effettivamente si sono puliti abbastanza bene i dati, nonostante se ne siano persi una buona quantità, inoltre è quello fisicamente più
 sensato tra i filtri inseriti. Questo vuol dire che si è ottenuto un rate di decadimento in tre fotoni decisamente molto basso (e quindi sul quale c'è un errore poissoniano
-decisamente molto alto), cioè di circa $1.2 \times 10^{-2}$~Hz. Questo perché si è comunque chiesto che il quarto rivelatore rivelasse un
+decisamente molto alto), cioè di circa $1.1 \times 10^{-2}$~Hz. Questo perché si è comunque chiesto che il quarto rivelatore rivelasse un
 segnale valido per il TAC. Si è provato a mantenre i filtri
 sulla somma delle energie rivelate e si sono aggiunti dei filtri affinché l'energia nei singoli rivelatori non sia nulla e non superi i 450 keVrimuovnedo il filtro sul
-segnale valido del TAC. Questa selezione ha senso in quanto il filtro sul TAC era necessario ad escludere gli eventi in cui il fotone da 1275~keV era stato rilevato in uno dei rivelatori sul piano, ma i restanti filtri ci assicurano che questi eventi sono in ogni caso scartati. In questo modo si ottengono gli spettri che si possono vedere nella Figura \ref{gr:120_spettri_pulitisom_nor4}.\\
-\input{./graphs/120_spettri_pulitisom_nor4}
+segnale valido del TAC. Questa selezione ha senso in quanto il filtro sul TAC era necessario ad escludere gli eventi in cui il fotone da 1275~keV era stato rilevato in uno dei rivelatori sul piano, ma i restanti filtri ci assicurano che questi eventi sono in ogni caso scartati. In questo modo si ottengono gli spettri che si possono vedere nella Figura \ref{gr:120_spettri_pulitisom_nor4_2}.\\
+\input{./graphs/120_spettri_pulitisom_nor4_2}
 
 Questi spettri si considerano in assoluto i più attendibili, e rivelano come ci sia una rate di circa 0.29 Hz. Non è necessario correggere questo valore per dead time perché
-si vede dagli spettri nella Figura \ref{gr:120_spettricalibrati} che il rate è sufficientemente basso.
+si vede dagli spettri nella Figura \ref{gr:120_spettricalibrati_2} che il rate è sufficientemente basso.
 \FloatBarrier
 
 \subsection{Confronto tra le rate}
@@ -173,8 +173,8 @@ attorno a quei valori.}
 \FloatBarrier
 \subsection{Il tempo di decadimento dell'ortopositronio}
 Dato l'esperimento, si è voluto anche andare a stimare il tempo di vita medio delle specie prodotte. Per quanto riguarda il parapositronio, però, questo non è
-possibile in quanto il tempo di vita è troppo basso, ed effettivamente si vede nello spettro del TAC della Figura \ref{gr:180_misura1_spettricalibrati} come si
-abbia una gaussiana semplice, mentre dalla Figura \ref{gr:120_spettri_pulitien} si vede che c'è un decadimento esponenziale più marcato. Perciò si studi questo
+possibile in quanto il tempo di vita è troppo basso, ed effettivamente si vede nello spettro del TAC della Figura \ref{gr:180_misura1_spettricalibrati_2} come si
+abbia una gaussiana semplice, mentre dalla Figura \ref{gr:120_spettri_pulitien_2} si vede che c'è un decadimento esponenziale più marcato. Perciò si studi questo
 grafico.\\
 
 Si è provato a studiare i dati con molti filtri, ma in nessun caso si è arrivati a vedere un'esponenziale sufficientemente "buono" per essere interpolato. Questo
