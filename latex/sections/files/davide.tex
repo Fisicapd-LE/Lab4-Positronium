@@ -78,7 +78,7 @@ al variare del ritardo introdotto.\\
 
 Una volta noti i parametri delle gaussiane, con una regressione lineare, che si può vedere nel Grafico \ref{gr:calib_time_retta}, si può andare a calibrare il sistema di
 acquisizione, andando a trovare i coefficienti di tale retta. I risultati sono:
-$$ m= 2.1256 \pm 0.0004 1/ns \hspace{3cm} q = 311.22 \pm 0.03$$\\
+$$ m= 2.1256 \pm 0.0004\ 1/ns \hspace{3cm} q = 311.22 \pm 0.03$$\\
 \input{./graphs/calib_time_retta}
 %Inserire regressione lineare della calibrazione temporale dell'apparato strumentale
 
@@ -157,18 +157,19 @@ si vede dagli spettri nella Figura \ref{gr:120_spettricalibrati_2} che il rate �
 Come si vedrà nella sezione successiva, per poter confrontare le rate di decadimento del positronio è necessario effettuare delle correzioni di natura geometrica. Per poterlo
 fare, è necessario conoscere le grandezze fisiche caratteristiche dell'esperimento. Si sono misurati (e saranno definiti in seguito):
 $$R = 17.9 \text{cm} \hspace{3cm} r =5.08 \text{cm}$$
-Per quanto riguarda il parapositronio, si sono visti eventi con una frequenza di 5.5~kHz, ma gli eventi visti sono circa il 4.03\% dei totali. Questo vuol dire che 
+Si sfrutti il calcolo teorico dell'accettanza (sezione successiva) per stimare il rapporto tra le rate dei due canali di decadimento. Per quanto riguarda il parapositronio, si sono visti eventi con una frequenza di 5.5~kHz, ma gli eventi visti sono circa il 4.03\% dei totali. Questo vuol dire che 
 ci sono stati eventi con un rate di circa 136.5 kHz. Per l'ortopositronio, invece, si sono visti circa il 2.52\% degli eventi a 120 gradi,
 perciò considerando che si è visto un rate
 di 0.29 Hz, il rate effettivo è di circa 11,5 Hz. Considerando ora che nel decadimento dell'ortopositronio solamente circa il 3.5\% degli eventi decade con un
 angolo che l'apparato strumentale vede\footnote{Si considera la distribuzione di probabilità trovata al link:
-\ref{bib:pos_formula} (confrontata con il grafico trovato nell'articolo \ref{bib:pos_graph}).
+\cite{bib:pos_formula} (confrontata con il grafico trovato nell'articolo \cite{bib:pos_graph}).
 Si trova che integrando numericamente tale funzione facendo variare l'angolo tra le traiettorie di 10 gradi attorno al valore 120 usato per la stima teorica},
-si ha che si è creato l'ortopositronio con un rate di circa 328.8 Hz. Questo vuol dire che il rapporto tra i due rate è di circa 1/415, abbastanza in linea con le previsioni
-teoriche\footnote{Nel considerare questo rapporto si sono fatte molte approssimazioni: il calcolo teorico è frutto di uno sviluppo al primo ordine, la correzione per il
+si ha che si è creato l'ortopositronio con un rate di circa 328.8 Hz. Prima di poter calcolare il rapporto tra le due rate è necessario considerare l'effiecienza dei rivelatori. Sperimentalmente si vede che questa è di circa 0.4 (più avanti se ne vedrà il calcolo). Questo coefficiente entra nella stima della rate finale del positronio, al quadrato nel caso del p-Ps e al cubo nel caso dell'o-Ps. Questo vuol dire che il rapporto tra le due rate è di circa 1/166, abbastanza in linea con le previsioni teoriche\footnote{Nel considerare questo rapporto si sono fatte molte approssimazioni: il calcolo teorico è frutto di uno sviluppo al primo ordine, la correzione per il
 dead time non è molto precisa e la pulizia degli eventi non è perfettamente univoca. Oltretutto gli intervalli di integrazione sono stati presi in modo da essere fisicamente
 sensati, ma non per questo oggettivi, si è scelto 10 gradi per avere un'area simile a quella effettiva del rivelatore. La distribuzione di probabilità è quasi costante
-attorno a quei valori.}
+attorno a quei valori.}\\
+
+Sfruttando invece la simulazione Monte Carlo, facendo variare anche gli angoli tra le direzioni dei fotoni, si ha che il decadimento a 3 fotoni viene visto nello 0.06580\% dei casi. Andando a ricalcolare il rapporto tra le rate dei canali di decadimento, tenendo sempre conto della stima dell'efficienza e utilizzando il modello teorico per il fattore geometrico del p-Ps, si ottiene un rapporto di circa 1/124.
 
 \FloatBarrier
 \subsection{Il tempo di decadimento dell'ortopositronio}
